@@ -9,3 +9,51 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+header{
+    padding: 0px;
+}
+
+header h1{
+   text-align: left;
+}
+
+header ul {
+    text-align: right;
+    list-style-type: none;
+    float: right; 
+    /*display: inline;*/
+    padding-right: 1rem;
+    padding-top: 0em;
+    margin:0;   
+}
+
+header li{
+    padding:5px 5px 5px 5px;
+    display: inline-block;
+    margin:0;
+    padding-top: 0em;
+    /*margin-top: 0em; */
+    
+
+}
+
+.overview-hero img {
+    height: 300px; 
+    width:300px ;
+    /*padding: 50;
+    object-fit: cover;*/
+}
+
+.cards img{
+    height: 300px; 
+    width:270px ;
+}
+
+.stories img{
+    height:210px;
+    width:210px;
+    border-radius: 50%;
+    
+
+}
