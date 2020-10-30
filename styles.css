@@ -24,12 +24,24 @@ body {
                             
 }
 
-header{
+header , .overview-hero, .card , .stories, footer {
+   
+    /*border : 1px solid #000;*/
+    padding : 5px;
+    margin:0px;
+    /*background-color: rgba(255 , 0 , 0, 30%);*/
+}
+
+header .container{
     padding: 0px;
     grid-area : header;
     display: flex;
-    background-color: #FFFFFF;
+    background-color: white;
     font-size: 18px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
    
 }
 
@@ -61,6 +73,7 @@ header nav a{
     color: #6b7280;
     float: right;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    text-decoration: none;
 }
 
 header nav a:hover{
@@ -73,23 +86,40 @@ header nav a:hover{
     color: #48BB78;
 }
 
-header , .overview-hero, .card , .stories, footer {
-   
-    /*border : 1px solid #000;*/
-    padding : 5px;
-    margin:0px;
-    /*background-color: rgba(255 , 0 , 0, 30%);*/
-}
+
 
 .overview-hero{
     background-color: #E2E8F0;
+    padding: 60px;
+}
+
+.overview-hero .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .overview-hero p{
-    text-align: right;
+    text-align: left;
     margin-top: 5px;
-    top: 50% ;
+    /*top: 50% ;*/
     padding: 0px;
+   
+}
+
+.overview-hero{
+    text-align: left;
+    grid-area: overviewhero;
+    
+}
+
+.overview-hero img {
+    height: 200px; 
+    width:200px ;
+    /*float: left;
+    /*padding: 50;
+    object-fit: cover;*/
+    margin-right: 40px;
    
 }
 
@@ -115,19 +145,6 @@ header , .overview-hero, .card , .stories, footer {
 }
     
 
-.overview-hero{
-    text-align: right;
-    grid-area: overviewhero;
-    
-}
-
-.overview-hero img {
-    height: 200px; 
-    width:200px ;
-    float: left;
-    /*padding: 50;
-    object-fit: cover;*/
-}
 
 .cards img{
     height: 300px; 
@@ -146,16 +163,37 @@ header , .overview-hero, .card , .stories, footer {
     margin: 10px;
 }
 
+.testing .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .testing a{
     background-color: #48BB78;
     padding: 2.5%;
     border-radius: 5px;
     float: right;
-    width: 10%;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
 }
 
 .testing-description{
     text-align: left;
+}
+
+.stories {
+    grid-area: stories;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.stories h2 , .stories a{
+    color: #5A67D8;
 }
 
 
@@ -164,19 +202,83 @@ header , .overview-hero, .card , .stories, footer {
     height:210px;
     width:210px;
     border-radius: 50%;
-    grid-area: stories;
-    text-align: center;
+    float: left;
+    margin: 40px;
+    margin-left: 10px;
+  
+}
+
+.stories h3 , .stories p{
+    text-align: left;
     
 }
+
+.stories a{
+    text-decoration: none;
+    
+}
+
 
 .newsletter{
     background-color: #48BB78;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
 }
+
+.newsletter button{
+    background-color: #5A67D8;
+    height:50%;
+    /*background-size: 50%;*/
+    padding: 20px 20px;
+    /*margin: 8px 0;*/
+    color:white;
+    border-radius: 5px;
+    border:none;
+    /*display: inline-block;*/
+    width:20%
+   
+    
+}
+
+.newsletter input{
+    width: 80%;
+    height: 50%;
+    padding: 20px 20px;
+    /*margin: 8px 0;*/
+    /*box-sizing: border-box;*/
+    /*display: inline-block;*/
+    border-radius: 5px;
+    border: none;
+    margin-right: 100px;
+    
+    
+}
+
+/*.form{
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+   
+}*/
+
+
+
+.newsletter form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
 
 footer{
     grid-area: footer;
     background-color: #4A5568;
     color: white;
-    text-align: center;
+   
 }
