@@ -12,10 +12,9 @@ body {
     width: 100%;
     display:grid;
     grid-template-columns: 1fr ;
-    grid-gap: 5px;
+   /*grid-gap: 1px;*/
    
-    
-    
+
     grid-template-areas: "header header"
                          "overviewhero overviewhero"
                          "card card card"
@@ -61,6 +60,7 @@ header li{
 header nav a{
     color: #6b7280;
     float: right;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 
 header nav a:hover{
@@ -75,9 +75,9 @@ header nav a:hover{
 
 header , .overview-hero, .card , .stories, footer {
    
-    border : 1px solid #000;
+    /*border : 1px solid #000;*/
     padding : 5px;
-    margin:5px;
+    margin:0px;
     /*background-color: rgba(255 , 0 , 0, 30%);*/
 }
 
@@ -88,21 +88,32 @@ header , .overview-hero, .card , .stories, footer {
 .overview-hero p{
     text-align: right;
     margin-top: 5px;
-    top: 50%
+    top: 50% ;
+    padding: 0px;
    
 }
 
 .card{
-    width: 30%;
+    width: 50%;
     grid-area: card;
     border-color: #E2E8F0;
     border-radius: 5px;
+    box-shadow: 5px 10px #888888; 
+    margin: 10px;
+}
+
+.card h3{
+    color:#48BB78;
+    font-size: 21px;
 }
 
 .cards{
     display: flex;
     flex-direction: row;
+    /*margin: 5%;*/
+    
 }
+    
 
 .overview-hero{
     text-align: right;
@@ -120,22 +131,52 @@ header , .overview-hero, .card , .stories, footer {
 
 .cards img{
     height: 300px; 
-    width:270px ;
+    width:250px ;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     
 }
+
+.testing{
+    background-color: #4A5568;
+    color:white;
+    padding: 10%;
+    text-align: left;
+    margin: 10px;
+}
+
+.testing a{
+    background-color: #48BB78;
+    padding: 2.5%;
+    border-radius: 5px;
+    float: right;
+    width: 10%;
+}
+
+.testing-description{
+    text-align: left;
+}
+
+
 
 .stories img{
     height:210px;
     width:210px;
     border-radius: 50%;
     grid-area: stories;
+    text-align: center;
     
+}
+
+.newsletter{
+    background-color: #48BB78;
+    text-align: center;
 }
 
 footer{
     grid-area: footer;
+    background-color: #4A5568;
+    color: white;
+    text-align: center;
 }
