@@ -7,20 +7,17 @@ window.onload = function(){
     subscribebutton.addEventListener("click", function(e){
        var email = document.getElementById("email").value;
        var messageText = document.getElementsByClassName("message")[0];
-       /*console.log(email);*/
+       var errorMessage = "Please enter a valid email address";
+       var passMessage = "Thank you! Your email address " + email + " has been added to our mailing list";
+       
        if (email.length == 0){
-          var errorMessage = "Please insert an email address";
-          messageText.textContent = errorMessage;
-        
-         
-            
+          messageText.textContent = errorMessage;     
        }
-       else if (email.length > 0){
-          var passMessage = "Thank you! Your email address " + email + " has been added to our mailing list";
+
+
+       else if (email.length > 0){  
           messageText.textContent = passMessage;
           
-         
-
        }
 
        e.preventDefault();

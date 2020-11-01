@@ -12,7 +12,8 @@ body {
     width: 100%;
     display:grid;
     grid-template-columns: 1fr ;
-   /*grid-gap: 1px;*/
+    /*grid-gap: 1px;*/
+
    
 
     grid-template-areas: "header header"
@@ -130,6 +131,7 @@ header nav a:hover{
     border-radius: 5px;
     box-shadow: 5px 10px #888888; 
     margin: 10px;
+    
 }
 
 .card h3{
@@ -161,6 +163,9 @@ header nav a:hover{
     padding: 10%;
     text-align: left;
     margin: 10px;
+    
+    
+    
 }
 
 .testing .container{
@@ -210,6 +215,10 @@ header nav a:hover{
     margin: 40px;
     margin-top: 10px;
   
+}
+
+.stories h3{
+    font-size: 18px;
 }
 
 .stories h3 , .stories p{
