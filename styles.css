@@ -175,15 +175,19 @@ header nav a:hover{
     padding: 2.5%;
     border-radius: 5px;
     float: right;
-    width: 100px;
+    width: 120px;
+    /*height: 100%;*/
     text-decoration: none;
     text-align: center;
     margin-left: 10px;
+    color: white;
 }
 
 .testing-description{
     text-align: left;
 }
+
+
 
 .stories {
     grid-area: stories;
@@ -223,7 +227,7 @@ header nav a:hover{
     background-color: #48BB78;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     color: white;
 }
 
